@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(projeto/fontes/idroid.otf) format('opentype');
+}
+
+:root {
+    --cor-primaria: #063D1E;
+    --cor-secundaria: #3DDC84;
+    --cor-destaque: #2FA866;
+    --cor-claro: #C5EBD6;
+    --cor-fundo: #83E1AD;
+
+
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', sans-serif;
+    --fonte-padrao: 'Arial', sans-serif; 
+}
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{
+background-color: var(--cor-fundo);
+font-family: var(--fonte-padrao) ;
+
+}
+
+
+
+/* Cabeçalho */
+
+header{
+  font-family: var(--fonte-destaque);  
+  background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-destaque), var(--cor-primaria));
+  text-align: center;
+  padding-top: 40px;
+  min-height: 150px;
+
+}
+header > h1{
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+header > p{
+    font-weight: lighter;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: var(--fonte-padrao);
+    color: rgba(255, 255, 255, 0.726);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+
+/* Navegação */
+nav{
+background-color: var(--cor-primaria);
+font-weight: bold;
+font-family: var(--fonte-padrao);
+padding: 10px;
+box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+
+
+
+}
+
+nav > a{
+    color: var(--cor-fundo);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    
+    
+
+}
+
+nav > a:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+}
+
+/* Conteúdo Principal */
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+   
+    
+}
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/* Artigo */
+
+main  h1{
+    font-family: var(--fonte-android);
+    color: var(--cor-primaria);
+    font-size: 1.8em;
+    font-weight: normal;
+   
+}
+
+main  h2{
+    font-family: var(--fonte-android);
+    color: var(--cor-primaria);
+    font-size: 1.3em;
+    text-indent: 8px;
+    background-image: linear-gradient(to right, var(--cor-claro), transparent);
+    font-weight: normal;
+    
+   
+}
+
+
+
+
+main a {
+    text-decoration: none;
+}
+
+main strong {
+    color: var(--cor-primaria);
+    font-weight: bold;
+   
+}
+
+
+
+/* Vídeo */
+div.video{
+    position: relative;
+    background-color: var(--cor-primaria);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    
+   }
+
+   div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+   }
+
+/* Conteúdo Complementar */
+aside{
+    background-color: var(--cor-claro);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(0,0,0, 0.281);
+  
+    
+   
+}
+
+aside > h3{
+    background-color: var(--cor-destaque);
+    font-family: var(--fonte-padrao);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside > p{
+     text-align: justify;
+    line-height: 1.5em;
+    text-indent: 45px;
+    color: black;
+   
+    font-size: 16px;
+}
+aside > p > strong{
+    color: #063D1E;
+    
+}
+
+aside > p > a{
+    text-decoration: none;
+
+    
+}
+aside > ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    
+  
+}
+
+
+
+/* Rodapé */
+footer{
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+   
+}
+
+footer  strong{
+    font-weight: bolder;
+     color: #2FA866;
+    
+}
